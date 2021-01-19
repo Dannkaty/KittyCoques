@@ -1,0 +1,46 @@
+[19-Jan-2021 11:10:39 UTC] PHP Warning:  Error while sending QUERY packet. PID=15308 in C:\Users\danka\Local Sites\kittycoques\app\public\wp-includes\wp-db.php on line 2056
+[19-Jan-2021 11:10:39 UTC] PHP Stack trace:
+[19-Jan-2021 11:10:39 UTC] PHP   1. {main}() C:\Users\danka\AppData\Local\Programs\Local\resources\extraResources\bin\wp-cli\wp-cli.phar:0
+[19-Jan-2021 11:10:39 UTC] PHP   2. include() C:\Users\danka\AppData\Local\Programs\Local\resources\extraResources\bin\wp-cli\wp-cli.phar:4
+[19-Jan-2021 11:10:39 UTC] PHP   3. include() phar://C:/Users/danka/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/php/boot-phar.php:11
+[19-Jan-2021 11:10:39 UTC] PHP   4. WP_CLI\bootstrap() phar://C:/Users/danka/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php:27
+[19-Jan-2021 11:10:39 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process() phar://C:/Users/danka/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/bootstrap.php:74
+[19-Jan-2021 11:10:39 UTC] PHP   6. WP_CLI\Runner->start() phar://C:/Users/danka/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php:23
+[19-Jan-2021 11:10:39 UTC] PHP   7. WP_CLI\Runner->run_command_and_exit() phar://C:/Users/danka/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1160
+[19-Jan-2021 11:10:39 UTC] PHP   8. WP_CLI\Runner->run_command() phar://C:/Users/danka/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:394
+[19-Jan-2021 11:10:39 UTC] PHP   9. WP_CLI\Dispatcher\Subcommand->invoke() phar://C:/Users/danka/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:371
+[19-Jan-2021 11:10:39 UTC] PHP  10. call_user_func:{phar://C:/Users/danka/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/Subcommand.php:451}() phar://C:/Users/danka/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/Subcommand.php:451
+[19-Jan-2021 11:10:39 UTC] PHP  11. WP_CLI\Dispatcher\CommandFactory::WP_CLI\Dispatcher\{closure:phar://C:/Users/danka/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/CommandFactory.php:95-102}() phar://C:/Users/danka/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/Subcommand.php:451
+[19-Jan-2021 11:10:39 UTC] PHP  12. call_user_func:{phar://C:/Users/danka/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/CommandFactory.php:98}() phar://C:/Users/danka/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/CommandFactory.php:98
+[19-Jan-2021 11:10:39 UTC] PHP  13. Core_Command->check_update() phar://C:/Users/danka/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/CommandFactory.php:98
+[19-Jan-2021 11:10:39 UTC] PHP  14. Core_Command->get_updates() phar://C:/Users/danka/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/core-command/src/Core_Command.php:77
+[19-Jan-2021 11:10:39 UTC] PHP  15. wp_version_check() phar://C:/Users/danka/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/core-command/src/Core_Command.php:1297
+[19-Jan-2021 11:10:39 UTC] PHP  16. set_site_transient() C:\Users\danka\Local Sites\kittycoques\app\public\wp-includes\update.php:236
+[19-Jan-2021 11:10:39 UTC] PHP  17. update_site_option() C:\Users\danka\Local Sites\kittycoques\app\public\wp-includes\option.php:1963
+[19-Jan-2021 11:10:39 UTC] PHP  18. update_network_option() C:\Users\danka\Local Sites\kittycoques\app\public\wp-includes\option.php:1295
+[19-Jan-2021 11:10:39 UTC] PHP  19. update_option() C:\Users\danka\Local Sites\kittycoques\app\public\wp-includes\option.php:1725
+[19-Jan-2021 11:10:39 UTC] PHP  20. wpdb->update() C:\Users\danka\Local Sites\kittycoques\app\public\wp-includes\option.php:441
+[19-Jan-2021 11:10:39 UTC] PHP  21. wpdb->query() C:\Users\danka\Local Sites\kittycoques\app\public\wp-includes\wp-db.php:2361
+[19-Jan-2021 11:10:39 UTC] PHP  22. wpdb->_do_query() C:\Users\danka\Local Sites\kittycoques\app\public\wp-includes\wp-db.php:1945
+[19-Jan-2021 11:10:39 UTC] PHP  23. mysqli_query() C:\Users\danka\Local Sites\kittycoques\app\public\wp-includes\wp-db.php:2056
+[19-Jan-2021 11:10:39 UTC] PHP Warning:  Error while sending QUERY packet. PID=16192 in C:\Users\danka\Local Sites\kittycoques\app\public\wp-includes\wp-db.php on line 2056
+[19-Jan-2021 11:10:39 UTC] PHP Stack trace:
+[19-Jan-2021 11:10:39 UTC] PHP   1. {main}() C:\Users\danka\AppData\Local\Programs\Local\resources\extraResources\bin\wp-cli\wp-cli.phar:0
+[19-Jan-2021 11:10:39 UTC] PHP   2. include() C:\Users\danka\AppData\Local\Programs\Local\resources\extraResources\bin\wp-cli\wp-cli.phar:4
+[19-Jan-2021 11:10:39 UTC] PHP   3. include() phar://C:/Users/danka/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/php/boot-phar.php:11
+[19-Jan-2021 11:10:39 UTC] PHP   4. WP_CLI\bootstrap() phar://C:/Users/danka/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php:27
+[19-Jan-2021 11:10:39 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process() phar://C:/Users/danka/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/bootstrap.php:74
+[19-Jan-2021 11:10:39 UTC] PHP   6. WP_CLI\Runner->start() phar://C:/Users/danka/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php:23
+[19-Jan-2021 11:10:39 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar://C:/Users/danka/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1158
+[19-Jan-2021 11:10:39 UTC] PHP   8. require() phar://C:/Users/danka/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1237
+[19-Jan-2021 11:10:39 UTC] PHP   9. WP_Site_Health::get_instance() C:\Users\danka\Local Sites\kittycoques\app\public\wp-settings.php:541
+[19-Jan-2021 11:10:39 UTC] PHP  10. WP_Site_Health->__construct() C:\Users\danka\Local Sites\kittycoques\app\public\wp-admin\includes\class-wp-site-health.php:64
+[19-Jan-2021 11:10:39 UTC] PHP  11. WP_Site_Health->maybe_create_scheduled_event() C:\Users\danka\Local Sites\kittycoques\app\public\wp-admin\includes\class-wp-site-health.php:36
+[19-Jan-2021 11:10:39 UTC] PHP  12. wp_next_scheduled() C:\Users\danka\Local Sites\kittycoques\app\public\wp-admin\includes\class-wp-site-health.php:2577
+[19-Jan-2021 11:10:39 UTC] PHP  13. wp_get_scheduled_event() C:\Users\danka\Local Sites\kittycoques\app\public\wp-includes\cron.php:627
+[19-Jan-2021 11:10:39 UTC] PHP  14. _get_cron_array() C:\Users\danka\Local Sites\kittycoques\app\public\wp-includes\cron.php:576
+[19-Jan-2021 11:10:39 UTC] PHP  15. get_option() C:\Users\danka\Local Sites\kittycoques\app\public\wp-includes\cron.php:953
+[19-Jan-2021 11:10:39 UTC] PHP  16. wpdb->get_row() C:\Users\danka\Local Sites\kittycoques\app\public\wp-includes\option.php:146
+[19-Jan-2021 11:10:39 UTC] PHP  17. wpdb->query() C:\Users\danka\Local Sites\kittycoques\app\public\wp-includes\wp-db.php:2616
+[19-Jan-2021 11:10:39 UTC] PHP  18. wpdb->_do_query() C:\Users\danka\Local Sites\kittycoques\app\public\wp-includes\wp-db.php:1945
+[19-Jan-2021 11:10:39 UTC] PHP  19. mysqli_query() C:\Users\danka\Local Sites\kittycoques\app\public\wp-includes\wp-db.php:2056
